@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Office.Interop.Excel</id>
+    <version>12.0.0</version>
+    <title>Office.Interop.Excel</title>
+    <authors>xuchonglei</authors>
+    <owners>xuchonglei</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Office.Interop.Excel</description>
+    <summary />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Office" version="12.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

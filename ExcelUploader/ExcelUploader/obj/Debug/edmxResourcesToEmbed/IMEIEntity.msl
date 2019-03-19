@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExcelUploadDBModelStoreContainer" CdmEntityContainer="ExcelUploadDBEntities">
+    <EntitySetMapping Name="tblUploaders">
+      <EntityTypeMapping TypeName="ExcelUploadDBModel.tblUploader">
+        <MappingFragment StoreEntitySet="tblUploader">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sl_Number" ColumnName="Sl_Number" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

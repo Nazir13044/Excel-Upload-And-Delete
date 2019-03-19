@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MessageBox</id>
+    <version>2.1.0</version>
+    <title>WPF Message Box</title>
+    <authors>Christoph Gattnar</authors>
+    <owners>Christoph Gattnar</owners>
+    <licenseUrl>http://messagebox.codeplex.com/license</licenseUrl>
+    <projectUrl>http://messagebox.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>WPF Message Box is a simple and free message box for WPF using MVVM pattern. Image, buttons, message, and caption can be set.</description>
+    <summary />
+    <copyright>Copyright (c) 2016 Christoph Gattnar</copyright>
+    <tags>message box dialog</tags>
+  </metadata>
+</package>

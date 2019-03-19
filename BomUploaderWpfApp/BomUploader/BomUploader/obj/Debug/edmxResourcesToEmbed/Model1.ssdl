@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CellPhoneProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BomUploads">
+    <Key>
+      <PropertyRef Name="BomUploadId" />
+    </Key>
+    <Property Name="BomUploadId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCode" Type="nvarchar(max)" />
+    <Property Name="YwxPartNo" Type="nvarchar(max)" />
+    <Property Name="ParentId" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="ManufacturerPartNo" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="WaltonPartId" Type="nvarchar(max)" />
+    <Property Name="Reference" Type="nvarchar(max)" />
+    <Property Name="ReelQty" Type="bigint" />
+    <Property Name="TotalQty" Type="bigint" />
+    <Property Name="SetQty" Type="bigint" />
+    <Property Name="Manufacturer" Type="nvarchar(max)" />
+    <Property Name="AddedBy" Type="bigint" />
+    <Property Name="AddedByName" Type="nvarchar(max)" />
+    <Property Name="AddedDate" Type="datetime2" Precision="7" />
+    <Property Name="UpdatedBy" Type="bigint" />
+    <Property Name="UpdatedByName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedDate" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityContainer Name="CellPhoneProjectModelStoreContainer">
+    <EntitySet Name="BomUploads" EntityType="Self.BomUploads" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

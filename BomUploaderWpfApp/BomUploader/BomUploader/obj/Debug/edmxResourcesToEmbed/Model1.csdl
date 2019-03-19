@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CellPhoneProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CellPhoneProjectEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BomUploads" EntityType="CellPhoneProjectModel.BomUpload" />
+  </EntityContainer>
+  <EntityType Name="BomUpload">
+    <Key>
+      <PropertyRef Name="BomUploadId" />
+    </Key>
+    <Property Name="BomUploadId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="YwxPartNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ParentId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ManufacturerPartNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WaltonPartId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Reference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ReelQty" Type="Int64" />
+    <Property Name="TotalQty" Type="Int64" />
+    <Property Name="SetQty" Type="Int64" />
+    <Property Name="Manufacturer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AddedBy" Type="Int64" />
+    <Property Name="AddedByName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AddedDate" Type="DateTime" Precision="7" />
+    <Property Name="UpdatedBy" Type="Int64" />
+    <Property Name="UpdatedByName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="7" />
+  </EntityType>
+</Schema>

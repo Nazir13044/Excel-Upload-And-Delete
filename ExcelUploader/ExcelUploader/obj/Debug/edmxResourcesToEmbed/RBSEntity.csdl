@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RBSYNERGYTESTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDealerDistributionDetail">
+    <Key>
+      <PropertyRef Name="DealerdistributionId" />
+    </Key>
+    <Property Name="DealerdistributionId" Type="Guid" Nullable="false" />
+    <Property Name="DealerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BarCode" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BarCode2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DONumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DistributionDate" Type="DateTime" Precision="0" />
+    <Property Name="IsSoldOut" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="RBSYNERGYTESTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDealerDistributionDetails" EntityType="Self.tblDealerDistributionDetail" />
+    <EntitySet Name="tblDealerDetails" EntityType="RBSYNERGYTESTModel.tblDealerDetail" />
+  </EntityContainer>
+  <EntityType Name="tblDealerDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DealerCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IMEI" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DONumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DistributionDate" Type="DateTime" Precision="0" />
+    <Property Name="IsSoldOut" Type="Boolean" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CellPhoneProjectModelStoreContainer" CdmEntityContainer="CellPhoneProjectEntities">
+    <EntitySetMapping Name="BomUploads">
+      <EntityTypeMapping TypeName="CellPhoneProjectModel.BomUpload">
+        <MappingFragment StoreEntitySet="BomUploads">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedByName" ColumnName="UpdatedByName" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+          <ScalarProperty Name="AddedByName" ColumnName="AddedByName" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="SetQty" ColumnName="SetQty" />
+          <ScalarProperty Name="TotalQty" ColumnName="TotalQty" />
+          <ScalarProperty Name="ReelQty" ColumnName="ReelQty" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="WaltonPartId" ColumnName="WaltonPartId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ManufacturerPartNo" ColumnName="ManufacturerPartNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="YwxPartNo" ColumnName="YwxPartNo" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="BomUploadId" ColumnName="BomUploadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

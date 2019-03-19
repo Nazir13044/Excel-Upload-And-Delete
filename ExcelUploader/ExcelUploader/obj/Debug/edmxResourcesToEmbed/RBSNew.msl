@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RBSYNERGYModelStoreContainer" CdmEntityContainer="RBSYNERGYEntities">
+    <EntitySetMapping Name="tblDealerDistributionDetails">
+      <EntityTypeMapping TypeName="RBSYNERGYModel.tblDealerDistributionDetail">
+        <MappingFragment StoreEntitySet="tblDealerDistributionDetails">
+          <ScalarProperty Name="DealerdistributionId" ColumnName="DealerdistributionId" />
+          <ScalarProperty Name="DealerCode" ColumnName="DealerCode" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="BarCode2" ColumnName="BarCode2" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="DONumber" ColumnName="DONumber" />
+          <ScalarProperty Name="DistributionDate" ColumnName="DistributionDate" />
+          <ScalarProperty Name="IsSoldOut" ColumnName="IsSoldOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
